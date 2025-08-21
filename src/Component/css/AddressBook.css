@@ -1,0 +1,182 @@
+/* Address Book Container */
+.address-book-container {
+  /* padding: 20px; */
+  /* margin-top: 40px; */
+  background: #fff;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #6a6c69;
+  font-weight: bold;
+  text-align: left; /* Center align title for better appearance */
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Add New Address Button */
+.add-address-btn {
+  background-color: #6b4226;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  float: right;
+  margin-bottom: 10px;
+}
+
+.add-address-btn:hover {
+  background-color: #55341a;
+}
+
+/* Address Section */
+.address-section {
+  margin: 20px 0;
+}
+
+.address-section-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #6a6c69;
+  font-weight: bold;
+}
+
+/* Address Card */
+.address-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.address-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.address-details p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.address-title {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Actions (Edit & Delete Buttons) */
+.address-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.address-actions button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.edit-btn {
+  color: #6b4226;
+}
+
+.edit-btn:hover {
+  color: #55341a;
+}
+
+.delete-btn {
+  color: #d9534f;
+}
+
+.delete-btn:hover {
+  color: #c9302c;
+}
+
+/* Responsive Styles */
+
+/* Large Screens (1440px and above) */
+@media (min-width: 1440px) {
+  .address-book-container {
+    max-width: 1200px;
+  }
+}
+
+/* Medium Screens (1024px to 1440px) */
+@media (max-width: 1440px) {
+  /* No specific styles needed here after removing form styles */
+}
+
+/* Tablet Screens (768px to 1024px) */
+@media (max-width: 1024px) {
+  .address-book-container {
+    padding: 20px;
+  }
+}
+
+/* Mobile Screens (480px to 768px) */
+@media (max-width: 768px) {
+  /* Address Book Container */
+  .address-book-container {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  /* Add New Address Button */
+  .add-address-btn {
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; /* Add spacing above the button */
+    float: none; /* Remove float */
+  }
+
+  /* Ensure the button appears after "Other Addresses" */
+  .address-section {
+    display: flex;
+    flex-direction: column; /* Ensure content flows naturally */
+  }
+
+  /* Place "Add New Address" button specifically after other addresses */
+  .add-address-btn {
+    order: 2; /* Ensures the button is below the "Other Addresses" */
+  }
+
+  /* Ensure "Other Addresses" section appears before the button */
+  .address-section-title,
+  .address-card {
+    order: 1; /* Ensure they appear above the button */
+  }
+}
+
+/* Small Mobile Screens (below 480px) */
+@media (max-width: 480px) {
+  /* Address Book Container */
+  .address-book-container {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+}
