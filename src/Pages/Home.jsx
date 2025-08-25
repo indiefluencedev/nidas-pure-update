@@ -4,12 +4,14 @@ import Winter from '../Component/Home/Winter';
 import Care from '../Component/Home/Care';
 import OurProducts from '../Component/Home/OurProducts';
 import Testimonial from '../Component/Home/Testimonial';
+import UspSection from '../Component/Home/usp';
 
 const Home = () => {
   return (
     <div>
       <Banner />
       <AboutUs />
+      <UspSection/>
       <Winter />
       <Care />
       {/* Only show 8 products and display the "View All" button */}

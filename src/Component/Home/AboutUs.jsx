@@ -1,6 +1,6 @@
-import bannerImage from '../../assets/Image/ushape.png'; // Replace with your image path
-import leftArrow from '../../assets/svg/leftarrow.svg'; // Replace with your SVG path
-import about from '../../assets/svg/about.svg'; // Replace
+import bannerImage from '../../assets/Image/Rectangle-3.png'; // Replace with your image path
+import leftArrow from '../../assets/svg/Arrow-left.svg'; // Replace with your SVG path
+
 
 const AboutUs = () => {
   // Function to handle scroll to OurProducts section
@@ -31,7 +31,7 @@ const AboutUs = () => {
               alt='Background Image'
               className='w-full h-full object-cover'
             />
-            <div className='absolute inset-0 bg-button-primary opacity-60'></div>
+            <div className='absolute inset-0 bg-black opacity-20'></div>
           </div>
 
           {/* Foreground Image Without Opacity */}
@@ -45,10 +45,10 @@ const AboutUs = () => {
         </div>
 
         {/* Right Content Section */}
-        <div className='md:w-1/2 lg:space-y-5 md:space-y-3 sm:space-y-4 xs:space-y-4 lg:mr-8 sm:mt-10 md:text-left sm:text-center xs:text-center xs:mt-5 tracking-wider xl:mr-24'>
+        <div className='md:w-1/2 lg:space-y-5 md:space-y-3 sm:space-y-4 xs:space-y-4 lg:mr-8 sm:mt-10 md:text-left sm:text-left xs:text-center xs:mt-5 tracking-wider xl:mr-24'>
           {/* Heading with SVG */}
           <div className='flex items-center xs:justify-center sm:justify-start'>
-            <h2 className='text-[16px] text-text'>About Us</h2>
+            <h2 className='text-[16px] text-[#5C3822]'>About Us</h2>
             <img
               src={leftArrow}
               alt='Left Arrow'
@@ -73,34 +73,31 @@ const AboutUs = () => {
           {/* Image + List Section */}
           <div className='flex items-start lg:gap-4 md:gap-2 sm:mt-5'>
             {/* Small Image to the Left */}
-            <div className='xs:w-[200px] xs:h-[90px] sm:w-[250px] sm:h-[140px] md-sm:w-[250px] md-sm:h-[120px] md:w-[250px] md:h-[130px] xl:w-[156px] xl:h-[90px] lg:w-[200px] lg:h-[100px]'>
-              <img
-                src={about}
-                alt='U-Shape Small Image'
-                className='w-full h-full object-cover'
-              />
-            </div>
+            {/* <div className='xs:w-[200px] xs:h-[90px] sm:w-[250px] sm:h-[140px] md-sm:w-[250px] md-sm:h-[120px] md:w-[250px] md:h-[130px] xl:w-[156px] xl:h-[90px] lg:w-[200px] lg:h-[100px]'>
+
+            </div> */}
 
             {/* List */}
-            <ul className='space-y-1 text-[13px] sm:text-[13px] xs:text-[10px] xl:text-[14px]  xs:text-left'>
-              <li className='flex sm:items-center gap-3 text-black xs:justify-start lg:ml-0 md:ml-2 sm:ml-4 xs:ml-3'>
-                <span className='dot'></span>
-                Ancient Indian herbs blended in essential oils
-              </li>
-              <li className='flex items-center gap-3 text-black xs:justify-start lg:ml-0 md:ml-2 sm:ml-4 xs:ml-3'>
-                <span className='dot'></span>
-                Promise of purity with the principles of Ayurveda
-              </li>
-              <li className='flex items-center gap-3 text-black xs:justify-start lg:ml-0 md:ml-2 sm:ml-4 xs:ml-3'>
-                <span className='dot'></span>
-                Beauty derived from absolute purity
-              </li>
-            </ul>
+           <ul className="space-y-1 text-[13px] sm:text-[13px] xs:text-[10px] xl:text-[14px] xs:text-left">
+           <li className="flex sm:items-center gap-3 text-black  xs:justify-start lg:ml-0   ">
+           <span className="w-3 h-3 rounded-full bg-[#5C3822]"></span>
+            Ancient Indian herbs blended in essential oils
+           </li>
+           <li className="flex items-center gap-3 text-black xs:justify-start lg:ml-0  ">
+           <span className="w-3 h-3 rounded-full bg-[#5C3822]"></span>
+            Promise of purity with the principles of Ayurveda
+            </li>
+            <li className="flex items-center gap-3 text-black xs:justify-start lg:ml-0  ">
+            <span className="w-3 h-3 rounded-full bg-[#5C3822]"></span>
+              Beauty derived from absolute purity
+            </li>
+</ul>
+
           </div>
 
           {/* Button - Added onClick handler for smooth scrolling */}
           <button
-            className='brown-deep-button mt-4'
+            className='px-[30px] py-4 bg-[#5C3822] text-white rounded-xl text-[18px]  font-ysabeau-bold  mt-4'
             onClick={scrollToProducts}
             aria-label='Shop now - go to products section'
           >

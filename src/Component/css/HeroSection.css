@@ -1,0 +1,11 @@
+.bg-hero {
+  background-image: url('../../assets/Image/bg-img.png'); /* adjust path as per your folder structure */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-color: white;
+
+
+
+}
